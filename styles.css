@@ -153,22 +153,115 @@ font-size: 1.5rem;
 }
 
 
-.menu .box-container{
+.box-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 1.5rem;
 }
 
 .menu .box-container .box{
   text-align: center;
-  border: solid #fff;
-  padding: 5rem;
+  border: solid 0.1rem rgb(150, 150, 150);
+  padding: 3rem;
+  cursor: pointer;
 }
 
-.box img {
-  width: 150px;
-  height: 150px;
+
+.menu .box-container .box h3{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+
+.menu .box-container .box .price span{
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+  
+}
+
+
+.box .coffees {
+  width: 9.375rem;
+  height: 9.375rem;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.menu .box-container .box:hover{
+  background-color: #fff;
+}
+
+.menu .box-container .box:hover>* {
+  color: #010103;
+}
+
+.review .box-container .box{
+  border: solid 0.01rem #fff;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 2rem 0;
+  line-height: 1.8rem;
+  
+}
+
+.review .box-container .box h3{
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 1rem 0;
+
+}
+
+.review .box-container .box .stars{
+  font-size: 1.5rem;
+  color: #d3ad7f;
+  align-items: center;
+}
+
+.review .box-container .box .users{
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+
+}
+
+.address{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer{
+  text-align: center;
+  color: #fff;
+}
+
+.footer .share{
+  padding: 1rem 0;
+}
+
+.footer .share i{
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+
+.footer .share i:hover{
+  color: #d3ad7f;
+  transform: 0.2s;
+  font-size: 2.4rem; ;
 }
 
